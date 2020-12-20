@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
@@ -48,12 +49,14 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"calculator is open",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(MainActivity.this, calculator.class);
                         startActivity(intent);
-                        //drawerLayout.closeDrawer(GravityCompat.START);
+                        drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.nav_quiz :
-                        Toast.makeText(getApplicationContext(),"Return is Clicked",Toast.LENGTH_LONG).show();
-                        //drawerLayout.closeDrawer(GravityCompat.START);
+                        Toast.makeText(getApplicationContext(),"Quiz is open",Toast.LENGTH_LONG).show();
+                        Intent intent1 = new Intent(MainActivity.this, quiz1.class);
+                        startActivity(intent1);
+                        drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
 
