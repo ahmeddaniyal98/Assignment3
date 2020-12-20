@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId())
                 {
                     case R.id.nav_cal :
-                        Toast.makeText(getApplicationContext(),"Retur is Clicked",Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(MainActivity.this, Book.class);
+                        Toast.makeText(getApplicationContext(),"calculator is open",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(MainActivity.this, calculator.class);
                         startActivity(intent);
                         //drawerLayout.closeDrawer(GravityCompat.START);
                         break;
